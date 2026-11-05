@@ -68,14 +68,13 @@ body.ver-editables .edit{background:#fff36b;outline:2px dashed var(--lapiz);outl
 .top{position:sticky;top:0;z-index:50;background:var(--lacado);border-bottom:2px solid var(--nogal)}
 .top .wrap{display:flex;align-items:center;gap:1.5rem;min-height:72px}
 .logo{display:block;text-decoration:none;line-height:1;position:relative;padding:.5rem .9rem .35rem}
-.logo::before{content:"";position:absolute;left:0;top:0;right:0;height:11px;border-left:2px solid var(--nogal);border-top:0}
 .logo small{display:block;font:700 .7rem/1 var(--serif);letter-spacing:.14em;margin-left:.2rem;position:relative}
 .logo small::after{content:"";position:absolute;left:5.2em;right:-.9rem;top:50%;height:1.5px;background:var(--nogal)}
 .logo span{display:block;font:700 1.12rem/1 var(--serif);letter-spacing:.02em;white-space:nowrap;margin-top:.22rem}
 .logo span em{font-style:normal;font-size:1.45em;line-height:.8}
 .logo span u{text-decoration:none;font-size:.78em;letter-spacing:.06em}
-.nav{display:none;margin-left:auto;gap:1.6rem;font:500 .95rem var(--sans)}
-.nav a{text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
+.nav{display:none;margin-left:auto;gap:1.3rem;font:500 .95rem var(--sans)}
+.nav a{white-space:nowrap;text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
 .nav a:hover{border-color:var(--lapiz)}
 .top .btn{margin-left:auto;min-height:44px;padding:.55rem 1rem;font-size:.92rem}
 @media(min-width:960px){.nav{display:flex}.top .btn{margin-left:0}}
@@ -99,7 +98,8 @@ body.ver-editables .edit{background:#fff36b;outline:2px dashed var(--lapiz);outl
 .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
 .hero-foto .nota{position:absolute;left:-.4rem;bottom:1.1rem;transform:rotate(-4deg);background:var(--metro);color:var(--nogal);font:700 1.15rem/1.15 var(--mano);padding:.55rem .9rem .5rem;max-width:13rem;box-shadow:3px 4px 0 var(--nogal)}
 @media(min-width:900px){
-  .hero .wrap{grid-template-columns:1.25fr .85fr;gap:3rem;align-items:end}
+  .hero .wrap{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3rem;align-items:end}
+  .hero h1{font-size:clamp(5rem,10.2vw,10.5rem)}
   .hero-foto .marco{aspect-ratio:4/5.4}
   .hero-foto{margin-bottom:-.5rem}
 }
@@ -238,7 +238,6 @@ body.ver-editables .edit{background:#fff36b;outline:2px dashed var(--lapiz);outl
 .pie a{text-decoration:none}
 .pie a:hover{color:var(--metro)}
 .pie .logo{color:var(--serrin);padding-left:0}
-.pie .logo::before{border-color:var(--serrin)}
 .pie .logo small::after{background:var(--serrin)}
 @media(min-width:900px){.pie .wrap{grid-template-columns:auto 1fr auto;align-items:center}}
 
