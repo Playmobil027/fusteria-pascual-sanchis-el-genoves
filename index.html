@@ -5,235 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fusteria Pascual Sanchis | Carpintería a medida en El Genovés</title>
 <meta name="description" content="Cocinas, armarios, vestidores, puertas y escaleras de madera a medida. Fusteria Pascual Sanchis, carpintería en El Genovés (Valencia). 4,8 en Google.">
+<link rel="canonical" href="https://fusteria-pascual-sanchis-el-genoves.vercel.app/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2322140F'/%3E%3Ctext x='32' y='42' font-family='serif' font-weight='700' font-size='28' text-anchor='middle' fill='%23F4EEE3'%3EPS%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --tinta:#22140F;
-  --caoba:#6A3226;
-  --crema:#F4EEE3;
-  --papel:#FAF7F1;
-  --linea:#D9CFBF;
-  --suave:#5B4A40;
-  --wa:#127A3C;
-  --serif:"Fraunces",Georgia,serif;
-  --sans:"Inter",system-ui,sans-serif;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
-body{font:400 1rem/1.65 var(--sans);color:var(--tinta);background:var(--papel);overflow-x:clip;padding-bottom:70px}
-img{display:block;max-width:100%}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--caoba);outline-offset:3px}
-.edit{}
-body.ver-editables .edit{background:#fff36b;outline:2px dashed #b23a22;outline-offset:2px;color:#000}
-.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.12}
-h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
-.eyebrow{display:block;font:600 .75rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--caoba);margin-bottom:1rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.75rem 1.4rem;font:500 .95rem/1.1 var(--sans);text-decoration:none;border:1px solid var(--tinta);background:var(--tinta);color:var(--crema);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-.btn:hover{background:var(--caoba);border-color:var(--caoba)}
-.btn.wa{background:var(--wa);border-color:var(--wa);color:#fff}
-.btn.wa:hover{background:#0c5c2c;border-color:#0c5c2c}
-.btn.line{background:transparent;color:inherit;border-color:currentColor}
-.btn.line:hover{background:var(--tinta);color:var(--crema);border-color:var(--tinta)}
-.btn svg{width:18px;height:18px;flex:none}
-.sec{padding:clamp(3.5rem,7vw,6.5rem) 0}
-.cab{display:grid;gap:1rem;margin-bottom:clamp(2rem,4vw,3.2rem);max-width:44rem}
-.cab p{color:var(--suave)}
-
-/* cabecera */
-.top{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
-.top .wrap{display:flex;align-items:center;gap:1.5rem;min-height:72px}
-.logo{text-decoration:none;line-height:1.05;display:block}
-.logo b{display:block;font:500 1.15rem/1 var(--serif);letter-spacing:.01em}
-.logo small{display:block;font:500 .62rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--suave);margin-top:.35rem}
-.nav{display:none;margin-left:auto;gap:1.7rem;font:500 .9rem var(--sans)}
-.nav a{text-decoration:none;color:var(--suave);padding:.3rem 0}
-.nav a:hover{color:var(--tinta)}
-.top .tel{display:none;font:500 .9rem var(--sans);text-decoration:none;white-space:nowrap}
-.top .btn{margin-left:auto;min-height:42px;padding:.55rem 1.1rem;font-size:.88rem}
-@media(min-width:1000px){.nav{display:flex}.top .btn{margin-left:0}.top .tel{display:block}}
-@media(max-width:400px){.top .btn{display:none}}
-
-/* hero */
-.hero{position:relative;color:#fff;background:var(--tinta);min-height:min(88svh,780px);display:flex;align-items:flex-end}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,6,.25) 0%,rgba(20,10,6,.35) 40%,rgba(20,10,6,.82) 100%)}
-.hero .wrap{position:relative;z-index:2;padding:6rem 0 3rem}
-.hero h1{font-size:clamp(2.4rem,6vw,4.9rem);max-width:15ch;line-height:1.04}
-.hero p{max-width:36rem;margin-top:1.3rem;font-size:clamp(1.02rem,1.5vw,1.2rem);color:#EFE6D6}
-.hero .acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
-.hero .btn.line{color:#fff}
-.hero .btn.line:hover{background:#fff;color:var(--tinta);border-color:#fff}
-.hero .sello{margin-top:2rem;font-size:.88rem;color:#E4D8C4;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
-.hero .sello span+span::before{content:"";display:inline-block;width:1px;height:.8em;background:#E4D8C480;margin-right:1.2rem}
-
-@media(max-width:560px){.hero .sello{gap:.3rem 1.2rem}.hero .sello span+span::before{display:none}}
-/* confianza */
-.conf{background:var(--crema);border-bottom:1px solid var(--linea)}
-.conf ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,1fr)}
-.conf li{padding:1.5rem 1rem 1.5rem 0;border-bottom:1px solid var(--linea)}
-.conf li:nth-child(odd){padding-right:1rem}
-.conf strong{display:block;font:400 clamp(1.7rem,3vw,2.3rem)/1 var(--serif);font-variant-numeric:lining-nums tabular-nums}
-.conf span{display:block;margin-top:.45rem;font-size:.86rem;color:var(--suave);line-height:1.4}
-@media(min-width:900px){.conf ul{grid-template-columns:repeat(5,1fr)}.conf li{border-bottom:0;border-left:1px solid var(--linea);padding:2rem 1.2rem 2rem 1.4rem}.conf li:first-child{border-left:0;padding-left:0}}
-
-/* servicios */
-.serv{display:grid;gap:1.8rem 1.6rem;grid-template-columns:1fr}
-.card{display:flex;flex-direction:column}
-.card .im{aspect-ratio:4/3;overflow:hidden;background:var(--tinta)}
-.card img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
-.card:hover img{transform:scale(1.03)}
-.card h3{font-size:1.45rem;margin:1.1rem 0 .5rem}
-.card p{color:var(--suave);font-size:.96rem}
-.card a.mas{margin-top:.9rem;font:500 .88rem var(--sans);color:var(--caoba);text-decoration:none;border-bottom:1px solid currentColor;align-self:flex-start;padding-bottom:2px}
-@media(min-width:640px){.serv{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:960px){.serv{grid-template-columns:repeat(3,1fr);gap:3rem 2rem}}
-
-/* destacados */
-.dest{background:var(--crema)}
-.dest .fila{display:grid;gap:2rem;align-items:center}
-.dest .fila+.fila{margin-top:clamp(3rem,6vw,5.5rem)}
-.dest .im{aspect-ratio:4/3;overflow:hidden;background:var(--tinta)}
-.dest .im img{width:100%;height:100%;object-fit:cover}
-.dest h2{margin-bottom:1rem}
-.dest p{color:var(--suave);max-width:32rem}
-.dest ul{list-style:none;padding:0;margin:1.4rem 0 1.8rem;display:grid;gap:.6rem;max-width:32rem}
-.dest li{padding:.7rem 0;border-top:1px solid var(--linea);font-size:.96rem}
-.dest li:last-child{border-bottom:1px solid var(--linea)}
-@media(min-width:900px){.dest .fila{grid-template-columns:1.1fr .9fr;gap:5rem}.dest .fila.inv{grid-template-columns:.9fr 1.1fr}.dest .fila.inv .im{order:2}}
-
-/* proceso */
-.pasos{display:grid;gap:0;grid-template-columns:1fr;border-top:1px solid var(--tinta)}
-.paso{padding:1.6rem 0;border-bottom:1px solid var(--linea)}
-.paso .n{font:400 .85rem/1 var(--sans);color:var(--caoba);letter-spacing:.14em;font-variant-numeric:tabular-nums}
-.paso h3{font-size:1.4rem;margin:.9rem 0 .6rem}
-.paso p{color:var(--suave);font-size:.96rem;max-width:26rem}
-@media(min-width:900px){.pasos{grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--linea)}.paso{padding:1.8rem 1.8rem 2.2rem 0;border-bottom:0}.paso+.paso{border-left:1px solid var(--linea);padding-left:1.8rem}}
-
-/* quiénes */
-.quien{background:var(--tinta);color:var(--crema)}
-.quien .wrap{display:grid;gap:2.5rem;align-items:center}
-.quien .eyebrow{color:#D9B99A}
-.quien p{color:#D9CFBF;max-width:33rem;margin-top:1.1rem}
-.quien .pts{list-style:none;padding:0;margin-top:1.8rem;display:grid;gap:0;max-width:33rem}
-.quien .pts li{padding:.85rem 0;border-top:1px solid rgba(244,238,227,.2);font-size:.96rem}
-.quien .pts li:last-child{border-bottom:1px solid rgba(244,238,227,.2)}
-.quien .foto img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.quien .foto figcaption{margin-top:.7rem;font-size:.82rem;color:#BFB3A0}
-@media(min-width:900px){.quien .wrap{grid-template-columns:1fr 1fr;gap:5rem}}
-
-/* galería */
-.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
-.filtros button{font:500 .85rem var(--sans);padding:.55rem 1rem;border:1px solid var(--linea);background:transparent;color:var(--tinta);cursor:pointer;transition:all .2s}
-.filtros button:hover{border-color:var(--tinta)}
-.filtros button[aria-pressed="true"]{background:var(--tinta);color:var(--crema);border-color:var(--tinta)}
-.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-.gal figure{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--tinta);cursor:zoom-in}
-.gal figure[hidden]{display:none}
-.gal button{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.gal figure:hover img{transform:scale(1.04)}
-@media(min-width:760px){.gal{grid-template-columns:repeat(3,1fr);gap:14px}}
-@media(min-width:1040px){.gal{grid-template-columns:repeat(4,1fr)}}
-.lb{position:fixed;inset:0;z-index:100;background:rgba(20,10,6,.94);display:none;align-items:center;justify-content:center;padding:1rem}
-.lb.on{display:flex}
-.lb img{max-height:88svh;max-width:min(1100px,94vw);object-fit:contain}
-.lb button{position:absolute;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;width:46px;height:46px;font-size:1.3rem;cursor:pointer}
-.lb .x{top:1rem;right:1rem}.lb .p{left:1rem;top:50%}.lb .s{right:1rem;top:50%}
-
-/* opiniones */
-.opin{background:var(--crema)}
-.opin .top3{display:grid;gap:2rem}
-.nota{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap}
-.nota b{font:400 clamp(3.4rem,7vw,5rem)/1 var(--serif);font-variant-numeric:lining-nums}
-.nota span{color:var(--suave);font-size:.95rem}
-.est{display:flex;gap:.15rem;color:var(--caoba);margin-top:.6rem}
-.est svg{width:18px;height:18px;fill:currentColor}
-.resenas{display:grid;gap:1.6rem}
-.resenas figure{background:var(--papel);border:1px solid var(--linea);padding:1.6rem}
-.resenas blockquote{font:400 1.12rem/1.55 var(--serif);margin:.9rem 0 1.1rem}
-.resenas cite{font:500 .8rem var(--sans);font-style:normal;color:var(--suave);letter-spacing:.04em}
-@media(min-width:900px){.opin .top3{grid-template-columns:1fr 2fr;gap:4rem;align-items:start}.resenas{grid-template-columns:repeat(3,1fr)}.resenas.dos{grid-template-columns:1fr}}
-.opin .enl{margin-top:1.8rem;display:inline-block;font:500 .88rem var(--sans);color:var(--caoba)}
-
-/* faq */
-.faq{max-width:50rem}
-.faq details{border-top:1px solid var(--linea)}
-.faq details:last-child{border-bottom:1px solid var(--linea)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;padding:1.3rem 0;font:400 1.2rem/1.3 var(--serif)}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font:300 1.6rem/1 var(--sans);color:var(--caoba);flex:none}
-.faq details[open] summary::after{content:"\2212"}
-.faq details p{padding:0 0 1.4rem;color:var(--suave);max-width:40rem}
-
-/* contacto */
-.cont{background:var(--crema)}
-.cont .wrap{display:grid;gap:3rem}
-.cont .datos{display:grid;gap:1.6rem;align-content:start}
-.cont h3{font-size:1.1rem;margin-bottom:.4rem}
-.cont .horas{list-style:none;padding:0;max-width:24rem;font-size:.93rem}
-.cont .horas li{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--linea)}
-.cont .horas li.hoy{font-weight:600}
-.cont address{font-style:normal}
-.cont a.l{color:var(--caoba)}
-.form{display:grid;gap:1rem;align-content:start;background:var(--papel);border:1px solid var(--linea);padding:clamp(1.4rem,3vw,2.2rem)}
-.form label{display:grid;gap:.4rem;font:500 .85rem var(--sans)}
-.form input,.form select,.form textarea{font:400 1rem var(--sans);padding:.8rem .9rem;border:1px solid var(--linea);background:#fff;color:var(--tinta);border-radius:0;width:100%}
-.form textarea{min-height:110px;resize:vertical}
-.form small{color:var(--suave);font-size:.8rem}
-.mapa{border:1px solid var(--linea);min-height:320px;grid-column:1/-1}
-.mapa iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
-@media(min-width:900px){.cont .wrap{grid-template-columns:1fr 1.1fr;gap:4.5rem}.mapa,.mapa iframe{min-height:380px}}
-
-/* pie */
-.pie{background:#120905;color:#CDBFA9;padding:3rem 0 2rem;font-size:.9rem}
-.pie .wrap{display:grid;gap:2rem}
-.pie .logo{color:var(--crema)}
-.pie .logo small{color:#A8998A}
-.pie nav{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem}
-.pie a{text-decoration:none}
-.pie a:hover{color:#fff}
-.pie .cop{border-top:1px solid rgba(244,238,227,.15);padding-top:1.3rem;font-size:.8rem;color:#A8998A}
-@media(min-width:900px){.pie .wrap{grid-template-columns:1.2fr 1fr 1fr}.pie .cop{grid-column:1/-1}}
-
-/* franja dueño */
-.dueno{background:#fff;border-top:3px solid var(--caoba);padding:2.2rem 0 3rem;color:#222}
-.dueno .aviso{display:inline-block;background:var(--caoba);color:#fff;font:600 .78rem var(--sans);padding:.3rem .7rem;margin-bottom:.9rem}
-.dueno h2{font-size:1.5rem}
-.dueno ul{margin:1.2rem 0 1.4rem;padding-left:1.2rem;display:grid;gap:.7rem;max-width:44rem}
-
-/* barra móvil */
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:8px;background:var(--papel);border-top:1px solid var(--linea)}
-.barra .btn{min-height:48px;padding:.5rem}
-@media(min-width:900px){.barra{display:none}body{padding-bottom:0}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#inicio" aria-label="Fusteria Pascual Sanchis, S.L."><b>Pascual Sanchis</b><small>Fusteria · El Genovés</small></a>
+    <a class="logo" href="/" aria-label="Fusteria Pascual Sanchis, S.L."><b>Pascual Sanchis</b><small>Fusteria · El Genovés</small></a>
     <nav class="nav" aria-label="Principal">
-      <a href="#servicios">Servicios</a>
-      <a href="#proceso">Cómo trabajamos</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="#opiniones">Opiniones</a>
-      <a href="#preguntas">Preguntas</a>
-      <a href="#contacto">Contacto</a>
+      <div class="dd"><button type="button" aria-haspopup="true">Servicios</button><div class="ddm"><a href="/cocinas/"><img src="/img/g/cocinas/t/16.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Cocinas</b><small>70 trabajos</small></span></a><a href="/armarios/"><img src="/img/g/armarios/t/47.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Armarios</b><small>59 trabajos</small></span></a><a href="/vestidores/"><img src="/img/g/vestidores/t/01.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Vestidores</b><small>27 trabajos</small></span></a><a href="/puertas/"><img src="/img/g/puertas/t/01.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Puertas</b><small>44 trabajos</small></span></a><a href="/portones/"><img src="/img/g/portones/t/09.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Portones</b><small>22 trabajos</small></span></a><a href="/escaleras/"><img src="/img/g/escaleras/t/01.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Escaleras</b><small>33 trabajos</small></span></a><a href="/banos/"><img src="/img/g/aseos/t/07.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Baños</b><small>14 trabajos</small></span></a><a href="/habitaciones/"><img src="/img/g/habitaciones/t/14.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Habitaciones</b><small>60 trabajos</small></span></a><a href="/muebles-a-medida/"><img src="/img/g/muebles/t/06.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Muebles a medida</b><small>15 trabajos</small></span></a><a href="/trabajos-varios/"><img src="/img/g/varios/t/48.jpg" alt="" width="62" height="46" loading="lazy"><span><b>Exterior y trabajos varios</b><small>44 trabajos</small></span></a></div></div>
+      <a href="/trabajos/">Trabajos</a>
+      <a href="/#proceso">Cómo trabajamos</a>
+      <a href="/#opiniones">Opiniones</a>
+      <a href="/#preguntas">Preguntas</a>
+      <a href="/presupuesto/">Contacto</a>
     </nav>
     <a class="tel" href="tel:+34962229019">96 222 90 19</a>
-    <a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20presupuesto%20de%20carpinter%C3%ADa%20a%20medida." target="_blank" rel="noopener">Pedir presupuesto</a>
+    <a class="btn wa" href="/presupuesto/">Pedir presupuesto</a>
+    <button class="burger" id="burger" type="button" aria-label="Menú" aria-expanded="false" aria-controls="menu-m"><i></i></button>
   </div>
 </header>
-
+<div class="menu-m" id="menu-m">
+  <a href="/trabajos/">Todos los trabajos (388)</a>
+  <h4>Servicios</h4><a href="/cocinas/">Cocinas</a><a href="/armarios/">Armarios</a><a href="/vestidores/">Vestidores</a><a href="/puertas/">Puertas</a><a href="/portones/">Portones</a><a href="/escaleras/">Escaleras</a><a href="/banos/">Baños</a><a href="/habitaciones/">Habitaciones</a><a href="/muebles-a-medida/">Muebles a medida</a><a href="/trabajos-varios/">Exterior y trabajos varios</a>
+  <h4>La empresa</h4>
+  <a href="/#proceso">Cómo trabajamos</a><a href="/#opiniones">Opiniones</a><a href="/#preguntas">Preguntas</a><a href="/presupuesto/">Contacto y presupuesto</a>
+</div>
 <main id="inicio">
+
 <section class="hero">
-  <img src="img/cocina-isla.jpg" alt="Cocina con isla hecha a medida" width="1023" height="768" fetchpriority="high">
+  <img src="/img/cocina-isla.jpg" alt="Cocina con isla hecha a medida" width="1023" height="768" fetchpriority="high">
   <div class="wrap">
     <h1>Carpintería a medida en El Genovés</h1>
     <p>Cocinas, armarios, vestidores, puertas y escaleras de madera. Medimos en tu casa, fabricamos en nuestro taller y montamos. Más de 35 años trabajando la madera.</p>
@@ -268,20 +71,21 @@ h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
       <p>Trabajamos a medida y con el material que prefieras: madera, lacado o una combinación. Cada trabajo se mide y se fabrica para su hueco.</p>
     </div>
     <div class="serv">
-      <article class="card"><div class="im"><img src="img/cocina-gris.jpg" alt="Cocina a medida" loading="lazy"></div><h3>Cocinas</h3><p>Diseño en 3D, toma de medidas y montaje. En madera o lacadas, con isla o en L.</p><a class="mas" href="#cocinas">Ver cocinas</a></article>
-      <article class="card"><div class="im"><img src="img/vestidor-esquina.jpg" alt="Vestidor en esquina" loading="lazy" style="object-position:50% 40%"></div><h3>Armarios y vestidores</h3><p>Empotrados, de puertas correderas o de hojas clásicas. Si el hueco es difícil, se adapta.</p><a class="mas" href="#armarios">Ver armarios</a></article>
-      <article class="card"><div class="im"><img src="img/puerta-doble.jpg" alt="Puerta de madera de entrada" loading="lazy"></div><h3>Puertas y portones</h3><p>Puertas de interior lisas o con cristal, y portones de entrada de madera con forja.</p><a class="mas" href="#trabajos" data-filtro="puertas">Ver puertas</a></article>
-      <article class="card"><div class="im"><img src="img/escalera-cristal.jpg" alt="Escalera de madera con barandilla de cristal" loading="lazy"></div><h3>Escaleras y barandillas</h3><p>Peldaños y barandillas de madera con cristal, hierro o madera maciza.</p><a class="mas" href="#trabajos" data-filtro="escaleras">Ver escaleras</a></article>
-      <article class="card"><div class="im"><img src="img/bano-lavabo.jpg" alt="Mueble de baño a medida" loading="lazy"></div><h3>Baños y habitaciones</h3><p>Muebles de aseo, camas con cajones, cabeceros y habitaciones infantiles.</p><a class="mas" href="#trabajos" data-filtro="banos">Ver baños y habitaciones</a></article>
-      <article class="card"><div class="im"><img src="img/pergola-vistas.jpg" alt="Pérgola de madera" loading="lazy"></div><h3>Exterior y restauración</h3><p>Pérgolas, contraventanas y trabajos varios en madera, y restauración de muebles.</p><a class="mas" href="#trabajos" data-filtro="exterior">Ver exterior</a></article>
+      <article class="card"><div class="im"><img src="/img/cocina-gris.jpg" alt="Cocina a medida" loading="lazy"></div><h3>Cocinas</h3><p>Diseño en 3D, toma de medidas y montaje. En madera o lacadas, con isla o en L.</p><a class="mas" href="/cocinas/">Ver cocinas</a></article>
+      <article class="card"><div class="im"><img src="/img/vestidor-esquina.jpg" alt="Vestidor en esquina" loading="lazy" style="object-position:50% 40%"></div><h3>Armarios y vestidores</h3><p>Empotrados, de puertas correderas o de hojas clásicas. Si el hueco es difícil, se adapta.</p><a class="mas" href="/armarios/">Ver armarios</a></article>
+      <article class="card"><div class="im"><img src="/img/puerta-doble.jpg" alt="Puerta de madera de entrada" loading="lazy"></div><h3>Puertas y portones</h3><p>Puertas de interior lisas o con cristal, y portones de entrada de madera con forja.</p><a class="mas" href="/puertas/">Ver puertas</a></article>
+      <article class="card"><div class="im"><img src="/img/escalera-cristal.jpg" alt="Escalera de madera con barandilla de cristal" loading="lazy"></div><h3>Escaleras y barandillas</h3><p>Peldaños y barandillas de madera con cristal, hierro o madera maciza.</p><a class="mas" href="/escaleras/">Ver escaleras</a></article>
+      <article class="card"><div class="im"><img src="/img/bano-lavabo.jpg" alt="Mueble de baño a medida" loading="lazy"></div><h3>Baños y habitaciones</h3><p>Muebles de aseo, camas con cajones, cabeceros y habitaciones infantiles.</p><a class="mas" href="/habitaciones/">Ver habitaciones y baños</a></article>
+      <article class="card"><div class="im"><img src="/img/pergola-vistas.jpg" alt="Pérgola de madera" loading="lazy"></div><h3>Exterior y restauración</h3><p>Pérgolas, contraventanas y trabajos varios en madera, y restauración de muebles.</p><a class="mas" href="/trabajos-varios/">Ver exterior</a></article>
     </div>
+    <p style="margin-top:2rem;color:var(--suave)">Todos los servicios:</p><div class="chips"><a href="/cocinas/">Cocinas</a><a href="/armarios/">Armarios</a><a href="/vestidores/">Vestidores</a><a href="/puertas/">Puertas</a><a href="/portones/">Portones</a><a href="/escaleras/">Escaleras</a><a href="/banos/">Baños</a><a href="/habitaciones/">Habitaciones</a><a href="/muebles-a-medida/">Muebles a medida</a><a href="/trabajos-varios/">Exterior y trabajos varios</a></div>
   </div>
 </section>
 
 <section class="sec dest">
   <div class="wrap">
     <div class="fila" id="cocinas">
-      <div class="im"><img src="img/cocina-roble.jpg" alt="Cocina de roble claro con encimera" loading="lazy"></div>
+      <div class="im"><img src="/img/cocina-roble.jpg" alt="Cocina de roble claro con encimera" loading="lazy"></div>
       <div>
         <span class="eyebrow">Cocinas</span>
         <h2>La cocina que se ajusta a tu espacio, no al revés</h2>
@@ -292,11 +96,11 @@ h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
           <li>Fabricación en taller propio y montaje</li>
           <li>Acabado a elegir: madera, lacado o mezcla <span class="edit">(consultar acabados disponibles)</span></li>
         </ul>
-        <a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20quiero%20pedir%20presupuesto%20de%20una%20cocina%20a%20medida." target="_blank" rel="noopener">Presupuesto de cocina</a>
+        <a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20quiero%20pedir%20presupuesto%20de%20una%20cocina%20a%20medida." target="_blank" rel="noopener">Presupuesto de cocina</a> <a class="btn line" href="/cocinas/">Ver todas las cocinas</a>
       </div>
     </div>
     <div class="fila inv" id="armarios">
-      <div class="im"><img src="img/armario-abierto.jpg" alt="Armario empotrado abierto con interior organizado" loading="lazy"></div>
+      <div class="im"><img src="/img/armario-abierto.jpg" alt="Armario empotrado abierto con interior organizado" loading="lazy"></div>
       <div>
         <span class="eyebrow">Armarios y vestidores</span>
         <h2>Armarios hechos al milímetro de tu hueco</h2>
@@ -307,7 +111,7 @@ h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
           <li>Vestidores completos en esquina o habitación</li>
           <li>Material a elegir <span class="edit">(consultar acabados disponibles)</span></li>
         </ul>
-        <a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20quiero%20pedir%20presupuesto%20de%20un%20armario%20o%20vestidor%20a%20medida." target="_blank" rel="noopener">Presupuesto de armario</a>
+        <a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20quiero%20pedir%20presupuesto%20de%20un%20armario%20o%20vestidor%20a%20medida." target="_blank" rel="noopener">Presupuesto de armario</a> <a class="btn line" href="/armarios/">Ver todos los armarios</a>
       </div>
     </div>
   </div>
@@ -342,7 +146,7 @@ h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
         <li>Trabajo a medida en madera, lacados y mezclas</li>
       </ul>
     </div>
-    <figure class="foto"><img src="img/nave.jpg" alt="Vista aérea del taller de Fusteria Pascual Sanchis en El Genovés" width="451" height="312" loading="lazy"><figcaption>Nuestro taller, a las afueras de El Genovés.</figcaption></figure>
+    <figure class="foto"><img src="/img/nave.jpg" alt="Vista aérea del taller de Fusteria Pascual Sanchis en El Genovés" width="451" height="312" loading="lazy"><figcaption>Nuestro taller, a las afueras de El Genovés.</figcaption></figure>
   </div>
 </section>
 
@@ -363,36 +167,37 @@ h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
       <button type="button" data-f="exterior" aria-pressed="false">Exterior y más</button>
     </div>
     <div class="gal" id="gal">
-      <figure data-c="cocinas"><button type="button"><img src="img/cocina-isla.jpg" alt="Cocina con isla" loading="lazy"></button></figure>
-      <figure data-c="cocinas"><button type="button"><img src="img/cocina-gris.jpg" alt="Cocina gris" loading="lazy"></button></figure>
-      <figure data-c="cocinas"><button type="button"><img src="img/cocina-roble.jpg" alt="Cocina de roble" loading="lazy"></button></figure>
-      <figure data-c="cocinas"><button type="button"><img src="img/cocina-roja.jpg" alt="Cocina roja" loading="lazy"></button></figure>
-      <figure data-c="cocinas"><button type="button"><img src="img/cocina-rosa.jpg" alt="Cocina rosa" loading="lazy"></button></figure>
-      <figure data-c="armarios"><button type="button"><img src="img/armario-abierto.jpg" alt="Armario abierto" loading="lazy"></button></figure>
-      <figure data-c="armarios"><button type="button"><img src="img/armario-clasico.jpg" alt="Armario clásico" loading="lazy"></button></figure>
-      <figure data-c="armarios"><button type="button"><img src="img/armario-corredero.jpg" alt="Armario corredero" loading="lazy"></button></figure>
-      <figure data-c="armarios"><button type="button"><img src="img/armario-nogal.jpg" alt="Armario de nogal" loading="lazy"></button></figure>
-      <figure data-c="armarios"><button type="button"><img src="img/vestidor-esquina.jpg" alt="Vestidor en esquina" loading="lazy"></button></figure>
-      <figure data-c="armarios"><button type="button"><img src="img/vestidor-madera.jpg" alt="Vestidor de madera" loading="lazy"></button></figure>
-      <figure data-c="puertas"><button type="button"><img src="img/puerta-doble.jpg" alt="Puerta doble" loading="lazy"></button></figure>
-      <figure data-c="puertas"><button type="button"><img src="img/puerta-cristales.jpg" alt="Puerta con cristales" loading="lazy"></button></figure>
-      <figure data-c="puertas"><button type="button"><img src="img/puerta-lisa.jpg" alt="Puerta lisa" loading="lazy"></button></figure>
-      <figure data-c="puertas"><button type="button"><img src="img/porton-forja.jpg" alt="Portón con forja" loading="lazy"></button></figure>
-      <figure data-c="escaleras"><button type="button"><img src="img/escalera-cristal.jpg" alt="Escalera con cristal" loading="lazy"></button></figure>
-      <figure data-c="escaleras"><button type="button"><img src="img/escalera-forja.jpg" alt="Escalera con forja" loading="lazy"></button></figure>
-      <figure data-c="escaleras"><button type="button"><img src="img/escalera-piedra.jpg" alt="Escalera sobre piedra" loading="lazy"></button></figure>
-      <figure data-c="escaleras"><button type="button"><img src="img/escalera-vidrio.jpg" alt="Escalera con vidrio" loading="lazy"></button></figure>
-      <figure data-c="banos"><button type="button"><img src="img/bano-lavabo.jpg" alt="Mueble de baño con lavabo" loading="lazy"></button></figure>
-      <figure data-c="banos"><button type="button"><img src="img/bano-ondas.jpg" alt="Mueble de baño" loading="lazy"></button></figure>
-      <figure data-c="banos"><button type="button"><img src="img/infantil-cama.jpg" alt="Habitación infantil con cama" loading="lazy"></button></figure>
-      <figure data-c="banos"><button type="button"><img src="img/infantil-flores.jpg" alt="Habitación infantil" loading="lazy"></button></figure>
-      <figure data-c="banos"><button type="button"><img src="img/infantil-nube.jpg" alt="Habitación infantil con nube" loading="lazy"></button></figure>
-      <figure data-c="exterior"><button type="button"><img src="img/pergola.jpg" alt="Pérgola de madera" loading="lazy"></button></figure>
-      <figure data-c="exterior"><button type="button"><img src="img/pergola-casa.jpg" alt="Pérgola junto a la casa" loading="lazy"></button></figure>
-      <figure data-c="exterior"><button type="button"><img src="img/pergola-vistas.jpg" alt="Pérgola con vistas" loading="lazy"></button></figure>
-      <figure data-c="exterior"><button type="button"><img src="img/barbacoa.jpg" alt="Barbacoa" loading="lazy"></button></figure>
-      <figure data-c="exterior"><button type="button"><img src="img/chimenea-libreria.jpg" alt="Librería y chimenea de madera" loading="lazy"></button></figure>
+      <figure data-c="cocinas"><button type="button"><img src="/img/cocina-isla.jpg" alt="Cocina con isla" loading="lazy"></button></figure>
+      <figure data-c="cocinas"><button type="button"><img src="/img/cocina-gris.jpg" alt="Cocina gris" loading="lazy"></button></figure>
+      <figure data-c="cocinas"><button type="button"><img src="/img/cocina-roble.jpg" alt="Cocina de roble" loading="lazy"></button></figure>
+      <figure data-c="cocinas"><button type="button"><img src="/img/cocina-roja.jpg" alt="Cocina roja" loading="lazy"></button></figure>
+      <figure data-c="cocinas"><button type="button"><img src="/img/cocina-rosa.jpg" alt="Cocina rosa" loading="lazy"></button></figure>
+      <figure data-c="armarios"><button type="button"><img src="/img/armario-abierto.jpg" alt="Armario abierto" loading="lazy"></button></figure>
+      <figure data-c="armarios"><button type="button"><img src="/img/armario-clasico.jpg" alt="Armario clásico" loading="lazy"></button></figure>
+      <figure data-c="armarios"><button type="button"><img src="/img/armario-corredero.jpg" alt="Armario corredero" loading="lazy"></button></figure>
+      <figure data-c="armarios"><button type="button"><img src="/img/armario-nogal.jpg" alt="Armario de nogal" loading="lazy"></button></figure>
+      <figure data-c="armarios"><button type="button"><img src="/img/vestidor-esquina.jpg" alt="Vestidor en esquina" loading="lazy"></button></figure>
+      <figure data-c="armarios"><button type="button"><img src="/img/vestidor-madera.jpg" alt="Vestidor de madera" loading="lazy"></button></figure>
+      <figure data-c="puertas"><button type="button"><img src="/img/puerta-doble.jpg" alt="Puerta doble" loading="lazy"></button></figure>
+      <figure data-c="puertas"><button type="button"><img src="/img/puerta-cristales.jpg" alt="Puerta con cristales" loading="lazy"></button></figure>
+      <figure data-c="puertas"><button type="button"><img src="/img/puerta-lisa.jpg" alt="Puerta lisa" loading="lazy"></button></figure>
+      <figure data-c="puertas"><button type="button"><img src="/img/porton-forja.jpg" alt="Portón con forja" loading="lazy"></button></figure>
+      <figure data-c="escaleras"><button type="button"><img src="/img/escalera-cristal.jpg" alt="Escalera con cristal" loading="lazy"></button></figure>
+      <figure data-c="escaleras"><button type="button"><img src="/img/escalera-forja.jpg" alt="Escalera con forja" loading="lazy"></button></figure>
+      <figure data-c="escaleras"><button type="button"><img src="/img/escalera-piedra.jpg" alt="Escalera sobre piedra" loading="lazy"></button></figure>
+      <figure data-c="escaleras"><button type="button"><img src="/img/escalera-vidrio.jpg" alt="Escalera con vidrio" loading="lazy"></button></figure>
+      <figure data-c="banos"><button type="button"><img src="/img/bano-lavabo.jpg" alt="Mueble de baño con lavabo" loading="lazy"></button></figure>
+      <figure data-c="banos"><button type="button"><img src="/img/bano-ondas.jpg" alt="Mueble de baño" loading="lazy"></button></figure>
+      <figure data-c="banos"><button type="button"><img src="/img/infantil-cama.jpg" alt="Habitación infantil con cama" loading="lazy"></button></figure>
+      <figure data-c="banos"><button type="button"><img src="/img/infantil-flores.jpg" alt="Habitación infantil" loading="lazy"></button></figure>
+      <figure data-c="banos"><button type="button"><img src="/img/infantil-nube.jpg" alt="Habitación infantil con nube" loading="lazy"></button></figure>
+      <figure data-c="exterior"><button type="button"><img src="/img/pergola.jpg" alt="Pérgola de madera" loading="lazy"></button></figure>
+      <figure data-c="exterior"><button type="button"><img src="/img/pergola-casa.jpg" alt="Pérgola junto a la casa" loading="lazy"></button></figure>
+      <figure data-c="exterior"><button type="button"><img src="/img/pergola-vistas.jpg" alt="Pérgola con vistas" loading="lazy"></button></figure>
+      <figure data-c="exterior"><button type="button"><img src="/img/barbacoa.jpg" alt="Barbacoa" loading="lazy"></button></figure>
+      <figure data-c="exterior"><button type="button"><img src="/img/chimenea-libreria.jpg" alt="Librería y chimenea de madera" loading="lazy"></button></figure>
     </div>
+    <a class="btn mas-btn" href="/trabajos/" style="width:max-content">Ver los 388 trabajos</a>
   </div>
 </section>
 
@@ -472,102 +277,23 @@ h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
     <div class="mapa"><iframe title="Mapa de Fusteria Pascual Sanchis en El Genovés" src="https://maps.google.com/maps?q=38.9914807,-0.46992&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   </div>
 </section>
-</main>
 
+</main>
 <footer class="pie">
-  <div class="wrap">
-    <a class="logo" href="#inicio" aria-label="Fusteria Pascual Sanchis, S.L."><b>Pascual Sanchis</b><small>Fusteria · El Genovés</small></a>
-    <nav aria-label="Legal"><a href="#">Aviso legal</a><a href="#">Política de privacidad</a><a href="#">Política de cookies</a></nav>
-    <nav aria-label="Redes">
-      <a href="https://www.instagram.com/fusteriapascualsanchis/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/fusteriapascualsanchis" target="_blank" rel="noopener">Facebook</a>
-    </nav>
-    <p class="cop">© Fusteria Pascual Sanchis, S.L. · Camí Lloc Nou del Fenollet, s/n, 46894 El Genovés</p>
+  <div class="wrap g">
+    <div><a class="logo" href="/" aria-label="Fusteria Pascual Sanchis, S.L."><b>Pascual Sanchis</b><small>Fusteria · El Genovés</small></a>
+      <p style="margin-top:1rem;max-width:22rem">Carpintería a medida en El Genovés, Valencia. Cocinas, armarios, puertas, escaleras y más.</p></div>
+    <div class="cols">
+      <div><h4>Servicios</h4><ul><li><a href="/cocinas/">Cocinas</a></li><li><a href="/armarios/">Armarios</a></li><li><a href="/vestidores/">Vestidores</a></li><li><a href="/puertas/">Puertas</a></li><li><a href="/portones/">Portones</a></li></ul></div>
+      <div><h4>&nbsp;</h4><ul><li><a href="/escaleras/">Escaleras</a></li><li><a href="/banos/">Baños</a></li><li><a href="/habitaciones/">Habitaciones</a></li><li><a href="/muebles-a-medida/">Muebles a medida</a></li><li><a href="/trabajos-varios/">Exterior y trabajos varios</a></li></ul></div>
+    </div>
+    <div><h4>Contacto</h4><ul><li><a href="tel:+34962229019">96 222 90 19</a></li><li><a href="/presupuesto/">Pedir presupuesto</a></li><li><a href="/trabajos/">Todos los trabajos</a></li><li><a href="https://www.instagram.com/fusteriapascualsanchis/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/fusteriapascualsanchis" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    <p class="cop">© Fusteria Pascual Sanchis, S.L. · Camí Lloc Nou del Fenollet, s/n, 46894 El Genovés · <a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></p>
   </div>
 </footer>
-
-<aside class="dueno" aria-label="Solo para el propietario">
-  <div class="wrap">
-    <span class="aviso">Esta franja no aparece en la web publicada</span>
-    <h2>Por qué esta web trabajaría para vosotros</h2>
-    <ul>
-      <li>Presupuestos directos: el cliente os escribe por WhatsApp o formulario con la foto del hueco, sin portales que cobren comisión.</li>
-      <li>Salir mejor en Google y Maps cuando alguien busca "carpintería en El Genovés" o "armarios a medida" por la zona.</li>
-      <li>Vuestros trabajos ordenados por tipo (cocinas, armarios, puertas, escaleras) y fáciles de ampliar.</li>
-      <li>Vuestro 4,8 en Google con 40 opiniones presentado con imagen profesional y un aspecto cuidado en el móvil.</li>
-    </ul>
-    <button class="btn" id="resaltar" type="button">Resaltar datos a confirmar</button>
-  </div>
-</aside>
-
-<div class="barra">
-  <a class="btn line" href="tel:+34962229019">Llamar</a>
-  <a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20presupuesto%20de%20carpinter%C3%ADa%20a%20medida." target="_blank" rel="noopener">Pedir presupuesto</a>
-</div>
-
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
-  <button class="x" type="button" aria-label="Cerrar">&times;</button>
-  <button class="p" type="button" aria-label="Anterior">&lsaquo;</button>
-  <img alt="Foto ampliada">
-  <button class="s" type="button" aria-label="Siguiente">&rsaquo;</button>
-</div>
-
-<script>
-(function(){
-  // galería: filtros
-  var figs=[].slice.call(document.querySelectorAll('#gal figure'));
-  var btns=[].slice.call(document.querySelectorAll('.filtros button'));
-  function filtrar(f){
-    btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===f?'true':'false')});
-    figs.forEach(function(x){x.hidden=!(f==='todos'||x.dataset.c===f)});
-  }
-  btns.forEach(function(b){b.addEventListener('click',function(){filtrar(b.dataset.f)})});
-  [].slice.call(document.querySelectorAll('[data-filtro]')).forEach(function(a){
-    a.addEventListener('click',function(){filtrar(a.dataset.filtro)});
-  });
-  // lightbox
-  var lb=document.getElementById('lb'),im=lb.querySelector('img'),cur=0,vis=[];
-  function abrir(i){vis=figs.filter(function(x){return !x.hidden});cur=i;im.src=vis[cur].querySelector('img').src;im.alt=vis[cur].querySelector('img').alt;lb.classList.add('on')}
-  function mover(d){cur=(cur+d+vis.length)%vis.length;im.src=vis[cur].querySelector('img').src;im.alt=vis[cur].querySelector('img').alt}
-  figs.forEach(function(x){x.querySelector('button').addEventListener('click',function(){abrir(figs.filter(function(y){return !y.hidden}).indexOf(x))})});
-  lb.querySelector('.x').addEventListener('click',function(){lb.classList.remove('on')});
-  lb.querySelector('.p').addEventListener('click',function(){mover(-1)});
-  lb.querySelector('.s').addEventListener('click',function(){mover(1)});
-  lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('on')});
-  document.addEventListener('keydown',function(e){
-    if(!lb.classList.contains('on'))return;
-    if(e.key==='Escape')lb.classList.remove('on');
-    if(e.key==='ArrowLeft')mover(-1);
-    if(e.key==='ArrowRight')mover(1);
-  });
-  // formulario -> WhatsApp
-  document.getElementById('form').addEventListener('submit',function(e){
-    e.preventDefault();
-    var f=e.target,t='Hola, soy '+f.nombre.value+'. Quiero presupuesto de: '+f.tipo.value+'.'+(f.msg.value?' '+f.msg.value:'')+(f.tel.value?' Mi teléfono: '+f.tel.value+'.':'');
-    window.open('https://wa.me/34661518443?text='+encodeURIComponent(t),'_blank','noopener');
-  });
-  // horario (Europe/Madrid)
-  var H={1:[[480,810],[900,1080]],2:[[480,810],[900,1080]],3:[[480,810],[900,1080]],4:[[480,810],[900,1080]],5:[[480,810],[900,1080]],6:[],0:[]};
-  var N=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
-  function fmt(m){var h=Math.floor(m/60),mm=m%60;return h+(mm?':'+(mm<10?'0':'')+mm:':00')}
-  function ahora(){
-    var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()),o={};
-    p.forEach(function(x){o[x.type]=x.value});
-    return {d:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday],m:(+o.hour%24)*60+(+o.minute)};
-  }
-  function estado(){
-    var t=ahora(),el=document.getElementById('estado'),tr=H[t.d]||[],txt='';
-    for(var i=0;i<tr.length;i++){
-      if(t.m>=tr[i][0]&&t.m<tr[i][1]){txt='Ahora abierto, hasta las '+fmt(tr[i][1]);break}
-      if(t.m<tr[i][0]){txt='Ahora cerrado, abrimos a las '+fmt(tr[i][0]);break}
-    }
-    if(!txt){for(var k=1;k<=7;k++){var d=(t.d+k)%7;if(H[d].length){txt='Ahora cerrado, abrimos '+(k===1?'mañana':'el '+N[d])+' a las '+fmt(H[d][0][0]);break}}}
-    el.textContent=txt;
-    var li=document.querySelector('#horas li[data-d="'+t.d+'"]');if(li)li.classList.add('hoy');
-  }
-  estado();setInterval(estado,60000);
-  document.getElementById('resaltar').addEventListener('click',function(){document.body.classList.toggle('ver-editables')});
-})();
-</script>
+<aside class="dueno" aria-label="Solo para el propietario"><div class="wrap"><span class="aviso">Esta franja no aparece en la web publicada</span><h2>Datos por confirmar</h2><ul><li>Fotos: proceden de la web actual del taller; en la web definitiva se pueden ordenar, quitar o ampliar.</li><li>Los textos de cada servicio describen lo que se ve en las fotos; lo marcado en amarillo hay que confirmarlo con el taller.</li><li>WhatsApp, horario y zona de servicio, a confirmar.</li></ul><button class="btn" id="resaltar" type="button">Resaltar datos a confirmar</button></div></aside>
+<div class="barra"><a class="btn line" href="tel:+34962229019">Llamar</a><a class="btn wa" href="https://wa.me/34661518443?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20presupuesto%20de%20carpinter%C3%ADa%20a%20medida." target="_blank" rel="noopener">Pedir presupuesto</a></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button class="x" type="button" aria-label="Cerrar">&times;</button><button class="p" type="button" aria-label="Anterior">&lsaquo;</button><img alt="Foto ampliada"><button class="s" type="button" aria-label="Siguiente">&rsaquo;</button></div>
+<script src="/assets/app.js" defer></script>
 </body>
 </html>
